@@ -37,7 +37,7 @@ class AlarmManager:
             if name in self.alarms:
                 clear_screen()
                 print(f"━━━━━━━━━━━━━━━━━━━━\nAlarm '{name}' is ringing!\n━━━━━━━━━━━━━━━━━━━━\n")
-                pygame.mixer.music.load("audio.wav")
+                pygame.mixer.music.load("audio.wav") #AUDIO file
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy():
                     await asyncio.sleep(1)
