@@ -12,6 +12,8 @@ def clear_screen():
         subprocess.run(['cls'], shell=True)
     else:  # For Unix/Linux/Mac
         subprocess.run(['clear'])
+clear_screen()
+
 
 class AlarmManager:
     def __init__(self):
